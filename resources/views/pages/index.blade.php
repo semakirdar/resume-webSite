@@ -1,6 +1,7 @@
 @extends('layouts.front')
 
 @section('title')
+    Index
 @endsection
 
 @section('css')
