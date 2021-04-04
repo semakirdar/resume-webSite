@@ -13,9 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {return view('pages.index'); }) ->name('index');
-Route::get('/resume', function () {return view('pages.resume'); }) ->name('resume');
-Route::get('/portfolio', function () {return view('pages.portfolio'); }) ->name('portfolio');
-Route::get('/blog', function () {return view('pages.blog'); }) ->name('blog');
-Route::get('/contact', function () {return view('pages.contact'); }) ->name('contact');
-
+Route::get('/', 'FrontController@index')->name('index');
+Route::get('/resume', 'FrontController@resume')->name('resume');
+Route::get('/portfolio', 'FrontController@portfolio')->name('portfolio');
+Route::get('/blog', 'FrontController@blog')->name('blog');
+Route::get('/contact', 'FrontController@contact')->name('contact');
