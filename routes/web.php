@@ -18,3 +18,4 @@ Route::get('/resume', 'FrontController@resume')->name('resume');
 Route::get('/portfolio', 'FrontController@portfolio')->name('portfolio');
 Route::get('/blog', 'FrontController@blog')->name('blog');
 Route::get('/contact', 'FrontController@contact')->name('contact');
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
